@@ -791,7 +791,18 @@ aipo.calendar.populateWeeklySchedule = function(_portletId, params) {
 
 	            if (!ptConfig[_portletId].isScroll) {
 	                dojo.byId('weeklyScrollPane_'+_portletId).scrollTop = ptConfig[_portletId].contentScrollTop;
-	                ptConfig[_portletId].isScroll = true;
+	                if(dojo.byId('weeklyScrollPane_'+_portletId).scrollTop != ptConfig[_portletId].contentScrollTop) {
+	                	// display:none;状態になっていると、scrollTopが変更できないため、とにもかくにも一旦描画する
+	                    var status = dojo.byId("portletsBody").style.display;
+	                    dojo.byId("portletsBody").style.display = "";
+	                    dojo.byId('weeklyScrollPane_'+_portletId).scrollTop = ptConfig[_portletId].contentScrollTop;
+	                    if(dojo.byId('weeklyScrollPane_'+_portletId).scrollTop == ptConfig[_portletId].contentScrollTop) {
+	                        ptConfig[_portletId].isScroll = true;
+	                    }
+	                    dojo.byId("portletsBody").style.display = status;
+	                } else {
+	                    ptConfig[_portletId].isScroll = true;
+	                }
 	            }
 	            ptConfig[_portletId].isTooltipEnable = true;
 
