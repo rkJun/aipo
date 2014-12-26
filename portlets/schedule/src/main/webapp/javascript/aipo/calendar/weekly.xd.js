@@ -782,6 +782,14 @@ aipo.calendar.populateWeeklySchedule = function(_portletId, params) {
 	            dojo.byId("weeklyTableHead_" + _portletId).style.marginTop = "5px";
 	            var headHeight = dojo.byId("weeklyTableHead_" + _portletId).offsetHeight;
 	            var trHeight = dojo.byId("weeklyTermTr_" + _portletId).offsetHeight;
+	            if(headHeight==0 || trHeight==0) {
+	            	// display:none;状態だとoffsetHeightが取得できないため、一旦描画する
+	                var status = dojo.byId("portletsBody").style.display;
+	                dojo.byId("portletsBody").style.display = "";
+		            headHeight = dojo.byId("weeklyTableHead_" + _portletId).offsetHeight;
+		            trHeight = dojo.byId("weeklyTermTr_" + _portletId).offsetHeight;
+	                dojo.byId("portletsBody").style.display = status;
+	            }
 	        	headHeight += 5;
 	            headHeight -= trHeight;
 	            trHeight -= trHeight % 17;
@@ -800,10 +808,21 @@ aipo.calendar.populateWeeklySchedule = function(_portletId, params) {
 
 	            if (!ptConfig[_portletId].isScroll) {
 	                dojo.byId('weeklyScrollPane_'+_portletId).scrollTop = ptConfig[_portletId].contentScrollTop;
-	                ptConfig[_portletId].isScroll = true;
+	                if(dojo.byId('weeklyScrollPane_'+_portletId).scrollTop != ptConfig[_portletId].contentScrollTop) {
+	                	// display:none;状態になっていると、scrollTopが変更できないため、とにもかくにも一旦描画する
+	                    var status = dojo.byId("portletsBody").style.display;
+	                    dojo.byId("portletsBody").style.display = "";
+	                    dojo.byId('weeklyScrollPane_'+_portletId).scrollTop = ptConfig[_portletId].contentScrollTop;
+	                    if(dojo.byId('weeklyScrollPane_'+_portletId).scrollTop == ptConfig[_portletId].contentScrollTop) {
+	                        ptConfig[_portletId].isScroll = true;
+	                    }
+	                    dojo.byId("portletsBody").style.display = status;
+	                } else {
+	                    ptConfig[_portletId].isScroll = true;
+	                }
 	            }
 	            ptConfig[_portletId].isTooltipEnable = true;
-	            
+
 	            dojo.query(".weeklyTermTailTd_" + _portletId).style("display", "");
 	        }
 	    });

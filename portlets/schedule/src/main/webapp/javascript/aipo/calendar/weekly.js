@@ -773,6 +773,14 @@ aipo.calendar.populateWeeklySchedule = function(_portletId, params) {
 	            dojo.byId("weeklyTableHead_" + _portletId).style.marginTop = "5px";
 	            var headHeight = dojo.byId("weeklyTableHead_" + _portletId).offsetHeight;
 	            var trHeight = dojo.byId("weeklyTermTr_" + _portletId).offsetHeight;
+	            if(headHeight==0 || trHeight==0) {
+	            	// display:none;状態だとoffsetHeightが取得できないため、一旦描画する
+	                var status = dojo.byId("portletsBody").style.display;
+	                dojo.byId("portletsBody").style.display = "";
+		            headHeight = dojo.byId("weeklyTableHead_" + _portletId).offsetHeight;
+		            trHeight = dojo.byId("weeklyTermTr_" + _portletId).offsetHeight;
+	                dojo.byId("portletsBody").style.display = status;
+	            }
 	        	headHeight += 5;
 	            headHeight -= trHeight;
 	            trHeight -= trHeight % 17;
