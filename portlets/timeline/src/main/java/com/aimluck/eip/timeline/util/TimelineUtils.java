@@ -936,11 +936,23 @@ public class TimelineUtils {
         tub.setYoutubeFlag(true);
       }
 
+      List<String> images = new ArrayList<String>();
+      NodeList nodeListProperty = document.getElementsByTagName("meta");
+      String ogimage = null;
+      for (int i = 0; i < nodeListProperty.getLength(); i++) {
+        Element element = (Element) nodeListProperty.item(i);
+        String property = element.getAttribute("property");
+        if ("og:image".equals(property)) {
+          ogimage = element.getAttribute("content");
+        }
+      }
+      if (ogimage != null) {
+        images.add(ogimage);
+      }
       String protocolString =
         url_str.substring(0, url_str.lastIndexOf(':') + 1);
 
       NodeList nodeListImage = document.getElementsByTagName("img");
-      List<String> images = new ArrayList<String>();
       for (int i = 0; i < nodeListImage.getLength(); i++) {
         Element element = (Element) nodeListImage.item(i);
         String src = element.getAttribute("src");
