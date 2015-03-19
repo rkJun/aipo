@@ -946,7 +946,7 @@ public class TimelineUtils {
           ogimage = element.getAttribute("content");
         }
       }
-      if (ogimage != null) {
+      if (ogimage != null && FileFilter(ogimage)) {
         images.add(ogimage);
       }
       String protocolString =
@@ -971,7 +971,7 @@ public class TimelineUtils {
         }
         src = src.replaceAll("\n", "");
         src = src.replaceAll("\t", "");
-        if (src != null) {
+        if (src != null && FileFilter(src)) {
           images.add(src);
         }
       }
@@ -1013,6 +1013,14 @@ public class TimelineUtils {
     } else {
       return null;
     }
+  }
+
+  public static boolean FileFilter(String fileName) {
+    String FILTER_EXTENSION_SVG = ".svg";
+    if (fileName.endsWith(FILTER_EXTENSION_SVG)) {
+      return false;
+    }
+    return true;
   }
 
   public static ResultList<EipTTimeline> getTimelineList(Integer userId,
