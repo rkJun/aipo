@@ -749,7 +749,7 @@ aipo.message.resizeInput = function(input) {
     shadowDiv.style.height = "auto";
     shadowDiv.style.resize = "none";
     shadowDiv.cols = "10"
-    shadowDiv.innerHTML = shadowVal + " ";
+    shadowDiv.innerHTML = shadowVal + "あ";
 
     var objBody = document.getElementsByTagName("body").item(0);
 
@@ -765,8 +765,7 @@ aipo.message.resizeInput = function(input) {
     if (shadowHeight > 20*20) {
         shadowHeight = 20*20;
     }
-    // shadowHeight = 20より、入力欄の初期の高さ = 42.6pxになるように調整
-    input.style.height = shadowHeight * 1.0 + 22.6 + "px";
+    input.style.height = shadowHeight * 1.0 + 19 + "px";
     objBody.removeChild(shadowDiv);
 }
 
