@@ -1005,7 +1005,7 @@ public class TimelineUtils {
 
   public static ResultList<EipTTimeline> getTimelineList(Integer userId,
       List<Integer> parentIds, String type, int page, int limit, int minId,
-      List<Integer> userIds) {
+      List<Integer> userIds, String keywordParam) {
 
     if (parentIds == null || parentIds.size() == 0) {
       return new ResultList<EipTTimeline>(
@@ -1074,6 +1074,15 @@ public class TimelineUtils {
       }
       body.append(")");
       body.append(")");
+    }
+
+    if ((keywordParam != null) && (!keywordParam.equals(""))) {
+      // 選択したキーワードを指定する．
+      String keyword = "%" + keywordParam + "%";
+      body.append(" AND ");
+      body.append("eip_t_timeline.note LIKE '");
+      body.append(keyword);
+      body.append("' ");
     }
 
     StringBuilder last = new StringBuilder();

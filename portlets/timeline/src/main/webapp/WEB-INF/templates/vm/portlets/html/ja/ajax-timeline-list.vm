@@ -96,10 +96,12 @@
 	</a>
 	</div>
 	<div class="auiSummarySearch">
-        <form class="search">
-          <input type="text" class="" id="roomSearch"><label for="roomSearch" class="placeholder" style="display: block;">タイムラインを検索</label>
-          <button title="検索" class="submit"><i class="icon-search"></i></button>
-        </form>
+		#AUISearchHeader("searchForm_" "searchForm_" "$!jslink.getPortletById($!portlet.ID)" "aimluck.io.postViewPage(this, '$!portlet.ID', 'search-${indicator_id3}'); return false;")
+          <input type="hidden" id="baseuri_$!portlet.ID" value='$!jslink.getPortletById($!portlet.ID).addQueryData("template","TimelineScreen")' />
+          <input type="hidden" class="template" id="roomSearch" name="template" value="TimelineScreen" />
+          <input class="text floatLeft long" type="text" name="keyword" id="q$!{portlet.ID}" value="$!result.targetKeyword" /><label for="roomSearch" class="placeholder" style="display: block;">タイムラインを検索</label>
+          <button title="検索" class="submit" type="submit"><i class="icon-search"></i></button>
+        #AUISearchFooter()
     </div>
 #AUISummaryFilterDivFooter()
 #if($result.List.size() == 0)
@@ -192,4 +194,5 @@
   </div>
   </div>
 #end
+
 </div>

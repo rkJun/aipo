@@ -67,7 +67,7 @@ import com.aimluck.eip.util.ALEipUtils;
 
 /**
  * タイムライントピックの検索データを管理するクラスです。 <BR>
- * 
+ *
  */
 public class TimelineSelectData extends
     ALAbstractSelectData<EipTTimeline, EipTTimeline> implements ALData {
@@ -135,7 +135,7 @@ public class TimelineSelectData extends
   private HashMap<String, String> portletIdFromAppId;
 
   /**
-   * 
+   *
    * @param action
    * @param rundata
    * @param context
@@ -172,7 +172,7 @@ public class TimelineSelectData extends
 
   /**
    * My グループの一覧を取得する．
-   * 
+   *
    * @return
    */
   public List<ALEipGroup> getMyGroupList() {
@@ -181,7 +181,7 @@ public class TimelineSelectData extends
 
   /**
    * 一覧データを取得します。 <BR>
-   * 
+   *
    * @param rundata
    * @param context
    * @return
@@ -192,6 +192,8 @@ public class TimelineSelectData extends
 
       // 指定グループや指定ユーザをセッションに設定する．
       setupLists(rundata, context);
+
+      String keywordParam = rundata.getParameters().getString("keyword");
 
       ResultList<EipTTimeline> list = new ResultList<EipTTimeline>();
       if ((useridList != null && useridList.size() > 0)) {
@@ -204,7 +206,8 @@ public class TimelineSelectData extends
             current_page,
             getRowsNum(),
             0,
-            useridList);
+            useridList,
+            keywordParam);
       }
 
       return list;
@@ -233,7 +236,8 @@ public class TimelineSelectData extends
           0,
           0,
           minId,
-          useridList);
+          useridList,
+          null);
 
       return list;
     } catch (Exception ex) {
@@ -245,7 +249,7 @@ public class TimelineSelectData extends
 
   /**
    * 検索条件を設定した SelectQuery を返します。 <BR>
-   * 
+   *
    * @param rundata
    * @param context
    * @return
@@ -262,7 +266,7 @@ public class TimelineSelectData extends
 
   /**
    * ResultData に値を格納して返します。（一覧データ） <BR>
-   * 
+   *
    * @param obj
    * @return
    */
@@ -304,7 +308,7 @@ public class TimelineSelectData extends
 
   /**
    * ResultData に値を格納して返します。（詳細データ） <BR>
-   * 
+   *
    * @param obj
    * @return
    */
@@ -371,7 +375,7 @@ public class TimelineSelectData extends
   protected Map<Integer, List<TimelineResultData>> getComments(
       List<Integer> parentIds) {
     List<EipTTimeline> list =
-      TimelineUtils.getTimelineList(uid, parentIds, "T", -1, -1, 0, null);
+      TimelineUtils.getTimelineList(uid, parentIds, "T", -1, -1, 0, null, null);
     Map<Integer, List<TimelineResultData>> result =
       new HashMap<Integer, List<TimelineResultData>>(parentIds.size());
     for (EipTTimeline model : list) {
@@ -390,7 +394,15 @@ public class TimelineSelectData extends
   protected Map<Integer, List<TimelineResultData>> getActivities(
       List<Integer> parentIds) {
     List<EipTTimeline> list =
-      TimelineUtils.getTimelineList(uid, parentIds, "A", -1, -1, 0, useridList);
+      TimelineUtils.getTimelineList(
+        uid,
+        parentIds,
+        "A",
+        -1,
+        -1,
+        0,
+        useridList,
+        null);
 
     Map<Integer, List<TimelineResultData>> result =
       new HashMap<Integer, List<TimelineResultData>>(parentIds.size());
@@ -728,7 +740,7 @@ public class TimelineSelectData extends
 
   /**
    * トピックの総数を返す． <BR>
-   * 
+   *
    * @return
    */
   public int getTopicSum() {
@@ -737,7 +749,7 @@ public class TimelineSelectData extends
 
   /**
    * トピックの総数を返す． <BR>
-   * 
+   *
    * @return
    */
   public int getContentHeight() {
@@ -746,7 +758,7 @@ public class TimelineSelectData extends
 
   /**
    * トピックの総数を返す． <BR>
-   * 
+   *
    * @return
    */
   public int getContentHeightMax() {
@@ -755,7 +767,7 @@ public class TimelineSelectData extends
 
   /**
    * @return
-   * 
+   *
    */
   @Override
   protected Attributes getColumnMap() {
@@ -767,7 +779,7 @@ public class TimelineSelectData extends
   }
 
   /**
-   * 
+   *
    * @param id
    * @return
    */
@@ -789,7 +801,7 @@ public class TimelineSelectData extends
 
   /**
    * 他ユーザのトピックを編集する権限があるかどうかを返します。
-   * 
+   *
    * @return
    */
   public boolean hasAclUpdateTopicOthers() {
@@ -798,7 +810,7 @@ public class TimelineSelectData extends
 
   /**
    * 他ユーザのトピックを削除する権限があるかどうかを返します。
-   * 
+   *
    * @return
    */
   public boolean hasAclDeleteTopicOthers() {
@@ -807,7 +819,7 @@ public class TimelineSelectData extends
 
   /**
    * 部署の一覧を取得する．
-   * 
+   *
    * @return
    */
   public Map<Integer, ALEipPost> getPostMap() {
@@ -852,7 +864,7 @@ public class TimelineSelectData extends
   }
 
   /**
-   * 
+   *
    * @param id
    * @return
    */
@@ -871,7 +883,7 @@ public class TimelineSelectData extends
 
   /**
    * 指定グループや指定ユーザをセッションに設定する．
-   * 
+   *
    * @param rundata
    * @param context
    * @throws ALDBErrorException
@@ -913,7 +925,7 @@ public class TimelineSelectData extends
 
   /**
    * 表示切り替えで指定したグループ ID を取得する．
-   * 
+   *
    * @param rundata
    * @param context
    * @return
@@ -924,7 +936,7 @@ public class TimelineSelectData extends
 
   /**
    * 表示切り替えで指定したグループ ID を取得する．
-   * 
+   *
    * @param rundata
    * @param target_key
    * @param context
@@ -952,7 +964,7 @@ public class TimelineSelectData extends
 
   /**
    * 表示切り替え時に指定するグループ名
-   * 
+   *
    * @return
    */
   public String getTargetGroupName() {
