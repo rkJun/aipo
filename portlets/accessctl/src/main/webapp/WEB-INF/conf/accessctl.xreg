@@ -23,19 +23,19 @@
     <portlet-entry name="AccessControl" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>アクセス権限管理</title>
-            <description>アクセス権限を管理します。</description>
+            <title>접근권한관리</title>
+            <description>접근권한을 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="accessctl" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort" value="acl_role_name" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ロールのソート方法</title>
+                <title>롤 정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p2a-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort.style.items" value="acl_role_name" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2a-sort.style.values" value="ロール名" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-sort.style.values" value="롤명" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <parameter name="action" value="accessctl.AccessControlAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="_showtitlebar" value="false" hidden="true" cachedOnName="true" cachedOnValue="true"/>

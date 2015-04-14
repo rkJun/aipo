@@ -23,8 +23,8 @@
     <portlet-entry name="DeleteSample" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>サンプルデータの削除</title>
-            <description>サンプルデータを削除します</description>
+            <title>샘플데이터의 삭제</title>
+            <description>샘플데이터를 삭제합니다</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="deletesample" hidden="true" cachedOnName="true" cachedOnValue="true"/>

@@ -23,15 +23,15 @@
     <portlet-entry name="MyLink" hidden="true" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>Myリンク</title>
-            <description>個人用リンクを管理します。</description>
+            <title>My링크</title>
+            <description>개인용링크를 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="mylink" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="mylink.MyLinkAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-title1" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>タイトル1</title>
+                <title>타이틀1</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-link1" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
@@ -41,7 +41,7 @@
         </parameter>
         <parameter name="p2a-title2" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>タイトル2</title>
+                <title>타이틀2</title>
             </meta-info>
         </parameter>
         <parameter name="p2b-link2" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
@@ -51,7 +51,7 @@
         </parameter>
         <parameter name="p3a-title3" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>タイトル3</title>
+                <title>타이틀3</title>
             </meta-info>
         </parameter>
         <parameter name="p3b-link3" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
@@ -61,7 +61,7 @@
         </parameter>
         <parameter name="p4a-title4" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>タイトル4</title>
+                <title>타이틀4</title>
             </meta-info>
         </parameter>
         <parameter name="p4b-link4" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
@@ -71,7 +71,7 @@
         </parameter>
         <parameter name="p5a-title5" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>タイトル5</title>
+                <title>타이틀5</title>
             </meta-info>
         </parameter>
         <parameter name="p5b-link5" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
@@ -81,7 +81,7 @@
         </parameter>
         <parameter name="p6a-title6" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>タイトル6</title>
+                <title>타이틀6</title>
             </meta-info>
         </parameter>
         <parameter name="p6b-link6" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
@@ -91,7 +91,7 @@
         </parameter>
         <parameter name="p7a-title7" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>タイトル7</title>
+                <title>타이틀7</title>
             </meta-info>
         </parameter>
         <parameter name="p7b-link7" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
@@ -101,7 +101,7 @@
         </parameter>
         <parameter name="p8a-title8" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>タイトル8</title>
+                <title>타이틀8</title>
             </meta-info>
         </parameter>
         <parameter name="p8b-link8" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
@@ -111,7 +111,7 @@
         </parameter>
         <parameter name="p9a-title9" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>タイトル9</title>
+                <title>타이틀9</title>
             </meta-info>
         </parameter>
         <parameter name="p9b-link9" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
@@ -121,7 +121,7 @@
         </parameter>
         <parameter name="paa-titlea" value="" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>タイトル10</title>
+                <title>타이틀10</title>
             </meta-info>
         </parameter>
         <parameter name="pab-linka" value="" hidden="false" cachedOnName="true" cachedOnValue="true">

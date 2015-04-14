@@ -23,8 +23,8 @@
     <portlet-entry name="SysInfo" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>基本情報</title>
-            <description>ホスト情報を表示します。</description>
+            <title>기본정보</title>
+            <description>호스트정보를 표시합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="system" hidden="true" cachedOnName="true" cachedOnValue="true"/>

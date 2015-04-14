@@ -23,27 +23,27 @@
     <portlet-entry name="UserList" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>ユーザー名簿</title>
-            <description>登録されているユーザー情報が一覧で表示されます。キーワードを入力して検索することもできます。</description>
+            <title>사용자 명단</title>
+            <description>등록된 사용자 정보를 목록으로 표시합니다. 키워드를 입력하여 검색할 수도 있습니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="userlist" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="20" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ユーザー表示件数（トップページ）</title>
+                <title>사용자표시건수（첫페이지）</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="20" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ユーザー表示件数</title>
+                <title>사용자표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>
         <parameter name="action" value="userlist.UserListAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <url cachedOnURL="true"/>

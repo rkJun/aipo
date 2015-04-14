@@ -23,44 +23,44 @@
     <portlet-entry name="ManHour" hidden="true" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>プロジェクト管理</title>
-            <description>プロジェクトを管理します。</description>
+            <title>프로젝트관리</title>
+            <description>프로젝트를 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="manhour" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="manhour.ManHourAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-sort" value="time" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>工数集計ソート方法</title>
+                <title>공수집계정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-sort.style.items" value="user_name,category,schedule,time,manhour" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-sort.style.values" value="ユーザー,共有カテゴリ,予定,時間,工数" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-sort.style.values" value="사용자,공유카테고리,예정,시간,공수" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="50" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>工数表示件数</title>
+                <title>공수표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-rows" value="20" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>共有カテゴリ表示件数</title>
+                <title>공유카테고리표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p2a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3a-strlen" value="30" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>共有カテゴリ名表示文字数</title>
+                <title>공유카테고리명표시문자수</title>
             </meta-info>
         </parameter>
         <parameter name="p3a-strlen.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3a-strlen.style.items" value="10,15,30,0" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p3a-strlen.style.values" value="10文字,15文字,30文字,制限なし" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3a-strlen.style.values" value="10문자,15문자,30문자,무제한" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>
         <url cachedOnURL="true"/>
     </portlet-entry>

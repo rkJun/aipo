@@ -24,49 +24,49 @@
     <portlet-entry name="Gpdb" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>Webデータベース</title>
-            <description>項目を自由に設定してオリジナルの表を作成できます。データの追加も簡単に行えます。表計算ソフトを使う必要がないため複数人で同時に編集ができ、管理が分散しません。</description>
+            <title>Web데이터베이스</title>
+            <description>항목을 마음대로 설정해서 오리지널 표를 작성할 수 있습니다. 데이터 추가도 간편하게 할 수 있습니다. 표계산 소프트를 사용할 필요가 없고, 여러명이 동시에 편집할 수 있어 관리가 분산되지 않습니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="gpdb-top" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="5" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>データ表示件数（トップページ）</title>
+                <title>데이터표시건수（첫페이지）</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="20" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>データ表示件数</title>
+                <title>데이터표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1c-rows" value="20" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>データベース表示件数</title>
+                <title>데이터베이스표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1c-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1c-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1c-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1c-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="gpdb.GpdbAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_mode1" value="GpdbRecordFormScreen" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_image1" value="icon/icon_add.gif" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_screen1" value="true" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="function_caption1" value="データ追加" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="function_caption1" value="데이터추가" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_after_function1" value="aipo.gpdb.onLoadGpdbDialog" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <parameter name="p1d-database" value="" type="style" hidden="true" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>初期選択データベース</title>
+                <title>초기선택데이터베이스</title>
             </meta-info>
         </parameter>
         <parameter name="p1d-database.style" value="GpdbAllListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1d-database.style.initialvalue" value="（初期に表示するWebデータベースの選択）" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1d-database.style.initialvalue" value="（초기에 표시할 Web데이터베이스 선택）" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <media-type ref="html"/>
         <url cachedOnURL="true"/>

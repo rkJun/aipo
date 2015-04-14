@@ -23,19 +23,19 @@
     <portlet-entry name="ExternalSearch" hidden="true" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>検索窓</title>
-            <description>検索窓を管理します。</description>
+            <title>검색창</title>
+            <description>검색창을 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="externalsearch" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-selects" value="yahoo" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>初期選択検索エンジン</title>
+                <title>초기선택 검색엔진</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-selects.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-selects.style.items" value="yahoo,google,tabi" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-selects.style.values" value="Yahoo!,Google,旅侍" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-selects.style.values" value="Yahoo!,Google,Tabi" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="externalsearch.ExternalSearchAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>
         <url cachedOnURL="true"/>

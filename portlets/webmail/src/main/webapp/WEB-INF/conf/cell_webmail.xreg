@@ -23,51 +23,51 @@
     <portlet-entry name="Cell_WebMail" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>Webﾒｰﾙ</title>
-            <description>設定したアカウントのメールが送受信できるWebメール機能です。オリジナルの署名も設定することができます。</description>
+            <title>Web메일</title>
+            <description>설정한 계정의 메일이 송수신가능한 Web메일기능입니다.오리지널 서명도 설정가능합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="webmail" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="5" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>[アカウント]表示件数（通常時）</title>
+                <title>[계정]표시건수（보통）</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="10" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>[アカウント]表示件数（最大化時）</title>
+                <title>[계정]표시건수（최대화시）</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort" value="date" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>[メール]ソート方法</title>
+                <title>[메일]정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p2a-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort.style.items" value="subject,person,date" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2a-sort.style.values" value="件名,差出人,日付" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-sort.style.values" value="제목,발송인,일자" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3a-rows" value="10" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>[メール]表示件数</title>
+                <title>[메일]표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p3a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p3a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p4a-strlen" value="15" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>[メール]件名表示文字数</title>
+                <title>[메일]제목표시문자수</title>
             </meta-info>
         </parameter>
         <parameter name="p4a-strlen.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p4a-strlen.style.items" value="10,15,30,0" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p4a-strlen.style.values" value="10文字,15文字,30文字,制限なし" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p4a-strlen.style.values" value="10문자,15문자,30문자,무제한" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="webmail.WebMailAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="webmail.CellWebMailAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="docomo_foma"/>

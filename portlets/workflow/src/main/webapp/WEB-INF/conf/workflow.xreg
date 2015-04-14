@@ -23,31 +23,31 @@
     <portlet-entry name="Workflow" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>ワークフロー</title>
-            <description>決済や有給などの稟議・申請を簡単に行うことができます。申請経路や、テンプレートをあらかじめ設定しておくことも可能です。申請・承認はお知らせで通知されます。</description>
+            <title>워크플로우</title>
+            <description>결재나 유급등의 품의・신청을 쉽게 할 수 있습니다. 신청경로나, 템플릿을 미리 설정할 수도 있습니다. 신청・승인은 알림으로 통지됩니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="workflow" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="5" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>依頼表示件数（トップページ）</title>
+                <title>의뢰표시건수（첫페이지）</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="20" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>依頼表示件数</title>
+                <title>의뢰표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <parameter name="p1c-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1c-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1c-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1c-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <parameter name="p2a-sort" value="create_date" type="style" hidden="true" cachedOnName="true" cachedOnValue="true" />
 	    <parameter name="p3a-strlen" value="15" type="style" hidden="true" cachedOnName="true" cachedOnValue="true" />
@@ -56,7 +56,7 @@
         <parameter name="function_mode1" value="WorkflowFormScreen" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_screen1" value="true" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_image1" value="icon/icon_add.gif" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="function_caption1" value="依頼追加" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="function_caption1" value="의뢰추가" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_after_function1" value="aipo.workflow.onLoadWorkflowDialog" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>
         <url cachedOnURL="true"/>
@@ -64,37 +64,37 @@
     <portlet-entry name="WorkflowCategory" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>ワークフロー管理</title>
-            <description>決済や有給などの稟議・申請を簡単に行うことができます。申請経路や、テンプレートをあらかじめ設定しておくことも可能です。申請・承認はお知らせで通知されます。</description>
+            <title>워크플로우관리</title>
+            <description>결재나 유급등의 품의・신청을 쉽게 할 수 있습니다. 신청경로나, 템플릿을 미리 설정할 수도 있습니다. 신청・승인은 알림으로 통지됩니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="workflow-category-list" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="10" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ワークフロー管理表示件数</title>
+                <title>워크플로우관리표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort" value="category_name" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ワークフロー管理ソート方法</title>
+                <title>워크플로우관리정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p2a-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort.style.items" value="category_name" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2a-sort.style.values" value="分類名" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-sort.style.values" value="분류명" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="workflow.WorkflowAdminAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="_showtitlebar" value="false" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 	    <parameter name="p3a-strlen" value="0" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ワークフロー管理表示文字数</title>
+                <title>워크플로우관리표시문자수</title>
             </meta-info>
         </parameter>
         <parameter name="p3a-strlen.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3a-strlen.style.items" value="10,15,30,0" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p3a-strlen.style.values" value="10文字,15文字,30文字,制限なし" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3a-strlen.style.values" value="10문자,15문자,30문자,무제한" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>
         <url cachedOnURL="true"/>
     </portlet-entry>

@@ -24,62 +24,62 @@
     <portlet-entry name="Cabinet" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>フォルダ</title>
-            <description>ファイルを共有するための機能です。フォルダを階層化して管理できます。また、フォルダ毎にアクセス権限も設定できるため誰が何を閲覧できるかを管理できます。</description>
+            <title>폴더</title>
+            <description>파일 공유를 위한 기능입니다. 폴더를 계층화해서 관리할 수 있습니다. 또 폴더별 접근권한도 설정할 수 있어 누가 어디에 접근가능한지 관리할 수 있습니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="cabinet" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="5" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ファイル表示件数（トップページ）</title>
+                <title>파일표시건수（첫페이지）</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="20" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ファイル表示件数</title>
+                <title>파일표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1c-sort" value="update_date" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ファイルソート方法</title>
+                <title>파일정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p1c-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1c-sort.style.items" value="update_date,file_title,update_user" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1c-sort.style.values" value="更新日時,タイトル,更新者" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1c-sort.style.values" value="수정일시,타이틀,수정자" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <parameter name="p3a-folder" value="0" type="style" hidden="true" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>詳細表示時の初期表示フォルダ</title>
+                <title>상세표시시 초기표시폴더</title>
             </meta-info>
         </parameter>
         <parameter name="p3a-folder.style" value="CabinetFolderListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p3a-folder.style.initialvalue" value="すべてのフォルダ" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3a-folder.style.initialvalue" value="모든 폴더" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <parameter name="p4c-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p4c-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p4c-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p4c-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <parameter name="p1e-rows" value="4" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>表示形式（トップページ）</title>
+                <title>표시형식（첫페이지）</title>
             </meta-info>
         </parameter>
         <parameter name="p1e-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1e-rows.style.items" value="2,4" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1e-rows.style.values" value="簡易表示,詳細表示" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1e-rows.style.values" value="간편표시,상세표시" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <parameter name="action" value="cabinet.CabinetAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_mode1" value="CabinetFileFormScreen" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_image1" value="icon/icon_add.gif" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_screen1" value="true" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="function_caption1" value="ファイル追加" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="function_caption1" value="파일추가" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_after_function1" value="aipo.cabinet.onLoadCabinetFileDialog" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>
         <url cachedOnURL="true"/>

@@ -101,6 +101,6 @@ public class PageResultData implements ALData {
   }
 
   public boolean isMypage() {
-    return page_title.getValue().equals("マイページ");
+    return page_title.getValue().equals("마이 페이지");
   }
 }

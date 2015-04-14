@@ -23,64 +23,64 @@
     <portlet-entry name="Cell_Msgboard" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>掲示板</title>
-            <description>カテゴリやトピックを設定して、お知らせなどを掲載できます。</description>
+            <title>게시판</title>
+            <description>카테고리나 토픽을 설정하고, 알림등을 탑재할 수 있습니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="msgboard-topic-list" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="msgboard.CellMsgboardAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="5" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>トピック表示件数（通常時）</title>
+                <title>토픽표시건수（보통）</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="20" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>トピック表示件数（最大化時）</title>
+                <title>토픽표시건수（최대화시）</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1c-rows" value="20" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>カテゴリ表示件数</title>
+                <title>카테고리표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1c-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1c-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1c-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1c-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort" value="update_date" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>トピックソート方法</title>
+                <title>토픽정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p2a-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort.style.items" value="topic_name,category_name,owner_name,update_date" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2a-sort.style.values" value="トピック名,カテゴリ,作成者,更新日" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-sort.style.values" value="토픽명,카테고리,작성자,수정일" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2b-sort" value="response_old" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>返信ソート方法</title>
+                <title>답변정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p2b-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2b-sort.style.items" value="response_new,response_old" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2b-sort.style.values" value="返信日時の新しい順,返信日時の古い順" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2b-sort.style.values" value="답변일시 최신순,답변일시 오래된 순" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3a-category" value="" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>初期選択カテゴリ</title>
+                <title>초기선택카테고리</title>
             </meta-info>
         </parameter>
         <parameter name="p3a-category.style" value="MsgboardCategoryListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p3a-category.style.initialvalue" value="すべてのカテゴリ" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3a-category.style.initialvalue" value="모든 카테고리" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="msgboard.CellMsgboardAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_mode1" value="MsgboardTopicFormScreen" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_image1" value="icon/icon_add.gif" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_screen1" value="true" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="function_caption1" value="トピック追加" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="function_caption1" value="토픽추가" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_after_function1" value="aipo.msgboard.onLoadMsgboardDialog" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <media-type ref="docomo_foma"/>

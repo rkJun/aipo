@@ -23,37 +23,37 @@
     <portlet-entry name="Activity" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>更新情報</title>
-            <description>追加や更新があった場合にその内容を時系列で表示します。 キーワードを入力して検索することができます。</description>
+            <title>업데이트정보</title>
+            <description>추가, 수정한 경우 그 내용을 시간순으로 표시합니다. 키워드 입력으로 검색도 가능합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="action" value="activity.ActivityAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="template" value="activity" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="10" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>表示件数（トップページ）</title>
+                <title>표시건수（첫페이지）</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="20" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>表示件数</title>
+                <title>표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <parameter name="p2e-rows" value="2" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>表示形式（トップページ）</title>
+                <title>표시형식（첫페이지）</title>
             </meta-info>
         </parameter>
         <parameter name="p2e-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2e-rows.style.items" value="2,4" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2e-rows.style.values" value="簡易表示,詳細表示" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2e-rows.style.values" value="간편표시,상세표시" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <media-type ref="html"/>
         <url cachedOnURL="true"/>

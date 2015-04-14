@@ -23,8 +23,8 @@
     <portlet-entry name="License" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>ライセンス情報</title>
-            <description>ライセンス情報を表示します。</description>
+            <title>라이선스정보</title>
+            <description>라이선스정보를 표시합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="license" hidden="true" cachedOnName="true" cachedOnValue="true"/>

@@ -23,8 +23,8 @@
     <portlet-entry name="WebMailAccountAdmin" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>Webメール</title>
-            <description>設定したアカウントのメールが送受信できるWebメール機能です。オリジナルの署名も設定することができます。</description>
+            <title>Web메일</title>
+            <description>설정한 계정의 메일로 송수신할 수 있는 Web메일기능입니다. 오리지널 서명도 설정할 수 있습니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="webmail-account-admin" hidden="true" cachedOnName="true" cachedOnValue="true"/>

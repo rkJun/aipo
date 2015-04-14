@@ -23,27 +23,27 @@
     <portlet-entry name="MyGroup" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="owner-view"/>
         <meta-info>
-            <title>Myグループ</title>
-            <description>Myグループを管理します。</description>
+            <title>My그룹</title>
+            <description>My그룹을 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="mygroup" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="10" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>Myグループ表示件数（通常時）</title>
+                <title>My그룹표시건수（보통）</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort" value="group_alias_name" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>Myグループソート方法</title>
+                <title>My그룹정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p2a-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort.style.items" value="group_alias_name" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2a-sort.style.values" value="グループ名" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-sort.style.values" value="그룹명" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="mygroup.MyGroupAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="_showtitlebar" value="false" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>

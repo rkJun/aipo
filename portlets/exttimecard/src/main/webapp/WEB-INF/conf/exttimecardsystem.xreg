@@ -20,11 +20,11 @@
 
 -->
 <registry>
-    <portlet-entry name="ExtTimecardSystem" hidden="false" type="ref" parent="Velocity" application="false">
+    <portlet-entry name="ExtTimecardSystem" hidden="true" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>タイムカード管理</title>
-            <description>出勤、退勤はもちろん外出も1クリックで登録できます。ひと月ごとに自動で集計されるため計算の手間がかかりません。</description>
+            <title>타임카드관리</title>
+            <description>출근, 퇴근은 물론 외출도 원클릭으로 등록할 수 있습니다. 월별로 자동으로 집계되므로 계산이 편리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="exttimecardsystem-list" hidden="true" cachedOnName="true" cachedOnValue="true"/>

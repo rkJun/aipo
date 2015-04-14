@@ -23,27 +23,27 @@
     <portlet-entry name="Eventlog" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>イベントログ管理</title>
-            <description>イベントログを管理します。</description>
+            <title>이벤트로그관리</title>
+            <description>이벤트로그를 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="eventlog" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="50" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>イベントログ表示件数（通常時）</title>
+                <title>이벤트로그표시건수（보통）</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort" value="event_date" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>イベントログソート方法</title>
+                <title>이벤트로그정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p2a-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort.style.items" value="event_date" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2a-sort.style.values" value="発生日時" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-sort.style.values" value="발생일시" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="eventlog.EventlogAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="_showtitlebar" value="false" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>

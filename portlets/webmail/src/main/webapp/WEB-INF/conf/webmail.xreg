@@ -23,8 +23,8 @@
     <portlet-entry name="WebMail" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>Webメール</title>
-            <description>設定したアカウントのメールが送受信できるWebメール機能です。オリジナルの署名も設定することができます。</description>
+            <title>Web메일</title>
+            <description>설정한 계정의 메일이 송수신가능한 Web메일기능입니다.오리지널 서명도 설정가능합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="webmail" hidden="true" cachedOnName="true" cachedOnValue="true"/>
@@ -32,81 +32,81 @@
         <parameter name="function_mode1" value="WebMailFormScreen" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_screen1" value="true" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_image1" value="icon/icon_add.gif" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="function_caption1" value="メール作成" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="function_caption1" value="메일작성" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="5" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>メール表示件数（トップページ）</title>
+                <title>메일표시건수（첫페이지）</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="20" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>メール表示件数</title>
+                <title>메일표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1c-rows" value="5" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>メールアカウント表示件数</title>
+                <title>메일계정표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1c-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1c-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1c-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1c-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1d-rows" value="5" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>メールフィルタ表示件数</title>
+                <title>메일필터표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1d-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1d-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1d-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1d-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort" value="date" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>メールソート方法</title>
+                <title>메일정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p2a-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort.style.items" value="subject,person,date" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2a-sort.style.values" value="件名,差出人,日付" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-sort.style.values" value="제목,발송인,일자" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3a-accounts" value="" type="style" hidden="true" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>初期選択メールアカウント</title>
+                <title>초기선택메일계정</title>
             </meta-info>
         </parameter>
         <parameter name="p3a-accounts.style" value="WebMailAccountIdListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p3a-accounts.style.initialvalue" value="（初期に表示するメールアカウントの選択）" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3a-accounts.style.initialvalue" value="（초기에 표시하는 메일계정의 선택）" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p4a-strlen" value="15" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>メール件名表示文字数</title>
+                <title>메일제목표시문자수</title>
             </meta-info>
         </parameter>
         <parameter name="p4a-strlen.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p4a-strlen.style.items" value="10,15,30,0" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p4a-strlen.style.values" value="10文字,15文字,30文字,制限なし" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p4a-strlen.style.values" value="10문자,15문자,30문자,무제한" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>
         <url cachedOnURL="true"/>
     </portlet-entry>
     <portlet-entry name="WebMailAccountEdit" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="owner-view"/>
         <meta-info>
-            <title>メール設定</title>
-            <description>メールアカウントを管理します</description>
+            <title>메일설정</title>
+            <description>메일계정을 관리합니다</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="webmail-accountlist-detail" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p11a-rows" value="20" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>[アカウント]表示件数（トップページ）</title>
+                <title>[계정]표시건수（첫페이지）</title>
             </meta-info>
         </parameter>
         <parameter name="p11a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p11a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p11a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p11a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="webmail.WebMailAccountEditAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="_showtitlebar" value="false" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>

@@ -23,112 +23,112 @@
     <portlet-entry name="Schedule" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>スケジュール</title>
-            <description>メンバー全員のスケジュール共有が行えます。設備予約や継続スケジュールの登録など詳細な設定も可能です。表示形式はブロック・日別・週別・月別・一覧から選択できます。</description>
+            <title>스케쥴</title>
+            <description>멤버 전원의 스케쥴공유가 가능합니다.설비예약이나 장기스케쥴의 등록등 상세한 설정도 가능합니다.표시형식은 블록・일별・주별・월별・목록에서 선택할 수 있습니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="schedule" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="schedule.ScheduleAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 	    <parameter name="pba-template" value="schedule-calendar" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
 	        <meta-info>
-                <title>初期表示</title>
+                <title>초기표시</title>
             </meta-info>
     	</parameter>
     	<parameter name="pba-template.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="pba-template.style.items" value="schedule-calendar,schedule-oneday-group,schedule-weekly-group,schedule-monthly,schedule-search-list" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="pba-template.style.values" value="ブロック,日,週,月,一覧" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="pba-template.style.values" value="블록,일,주,월,목록" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p19-rows" value="detail" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
 	        <meta-info>
-                <title>表示形式（トップページ）</title>
+                <title>표시형식（첫페이지）</title>
             </meta-info>
     	</parameter>
     	<parameter name="p19-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p19-rows.style.items" value="simple,detail" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p19-rows.style.values" value="簡易表示,詳細表示" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p19-rows.style.values" value="간편표시,상세표시" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p195-rows" value="detail" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
 	        <meta-info>
-                <title>表示形式（月間）</title>
+                <title>표시형식（월간）</title>
             </meta-info>
     	</parameter>
     	<parameter name="p195-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p195-rows.style.items" value="simple,detail" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p195-rows.style.values" value="簡易表示,詳細表示" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p195-rows.style.values" value="간편표시,상세표시" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="9" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>表示開始時間</title>
+                <title>표시시작시간</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="0,1,2,3,4,5,6,7,8,9,10,11,12" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="0時,1時,2時,3時,4時,5時,6時,7時,8時,9時,10時,11時,12時" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="0시,1시,2시,3시,4시,5시,6시,7시,8시,9시,10시,11시,12시" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="22" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>表示終了時間</title>
+                <title>표시종료시간</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows.style.items" value="13,14,15,16,17,18,19,20,21,22,23,24" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-rows.style.values" value="13時,14時,15時,16時,17時,18時,19時,20時,21時,22時,23時,24時" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-rows.style.values" value="13시,14시,15시,16시,17시,18시,19시,20시,21시,22시,23시,24시" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1c-rows" value="30" type="style" hidden="true" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>表示時間間隔（ブロック）</title>
+                <title>표시시간간격（블록）</title>
             </meta-info>
         </parameter>
         <parameter name="p1c-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1c-rows.style.items" value="10,15,30" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1c-rows.style.values" value="10分,15分,30分" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1c-rows.style.values" value="10분,15분,30분" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-days" value="7" type="style" hidden="true" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>表示日数（ブロック）</title>
+                <title>표시일수（블록）</title>
             </meta-info>
         </parameter>
         <parameter name="p2a-days.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-days.style.items" value="1,2,3,4,5,6,7" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2a-days.style.values" value="1日,2日,3日,4日,5日,6日,7日" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-days.style.values" value="1일,2일,3일,4일,5일,6일,7일" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3a-user" value="" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>初期選択ユーザー／設備</title>
+                <title>초기선택사용자／설비</title>
             </meta-info>
         </parameter>
         <parameter name="p3a-user.style" value="UserFacilityListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p3a-user.style.initialvalue" value="（ユーザー／設備の選択）" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3a-user.style.initialvalue" value="（사용자／설비의 선택）" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3a-group" value="" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>初期選択グループ</title>
+                <title>초기선택그룹</title>
             </meta-info>
         </parameter>
         <parameter name="p3a-group.style" value="GroupFacilityListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p3a-group.style.initialvalue" value="（全体／設備の選択）" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3a-group.style.initialvalue" value="（전체／설비의 선택）" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3b-group" value="0" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>グループ表示時に、自分を上に表示</title>
+                <title>그룹표시시, 자신을 위에 표시</title>
             </meta-info>
         </parameter>
         <parameter name="p3b-group.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3b-group.style.items" value="0,1" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p3b-group.style.values" value="有効,無効" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3b-group.style.values" value="유효,무효" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p5a-view" value="1" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ToDoの表示</title>
+                <title>ToDo의 표시</title>
             </meta-info>
         </parameter>
         <parameter name="p5a-view.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p5a-view.style.items" value="1,0" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p5a-view.style.values" value="有効,無効" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p5a-view.style.values" value="유효,무효" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p7d-schk" value="f" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ブロックの簡易表示</title>
+                <title>블록 간편표시</title>
             </meta-info>
         </parameter>
         <parameter name="p7d-schk.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p7d-schk.style.items" value="f,t" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p7d-schk.style.values" value="有効,無効" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p7d-schk.style.values" value="유효,무효" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <parameter name="action" value="schedule.ScheduleAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_mode1" value="ScheduleFormScreen" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_screen1" value="true" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_image1" value="icon/icon_add.gif" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="function_caption1" value="予定追加" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="function_caption1" value="예정추가" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_after_function1" value="aipo.schedule.onLoadScheduleDialog" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>
         <url cachedOnURL="true"/>

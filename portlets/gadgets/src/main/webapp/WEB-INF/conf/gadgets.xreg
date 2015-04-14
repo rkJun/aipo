@@ -23,8 +23,8 @@
     <portlet-entry name="GadgetsAdmin" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>アプリ管理</title>
-            <description>アプリを管理します。</description>
+            <title>어플관리</title>
+            <description>어플을 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="gadgets-admin-list" hidden="true" cachedOnName="true" cachedOnValue="true"/>
@@ -36,8 +36,8 @@
     <portlet-entry name="GadgetsContainerAdmin" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>コンテナ管理</title>
-            <description>コンテナを管理します。</description>
+            <title>컨테이너관리</title>
+            <description>컨테이너를 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="gadgets-admin-list" hidden="true" cachedOnName="true" cachedOnValue="true"/>

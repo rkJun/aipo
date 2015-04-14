@@ -24,50 +24,50 @@
         <security-ref parent="user-view"/>
         <meta-info>
             <title>ToDo</title>
-            <description>ToDoを管理します。</description>
+            <description>ToDo를 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="todo" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="10" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ToDo表示件数（最大化時）</title>
+                <title>ToDo표시건수（최대화시）</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1c-rows" value="10" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>カテゴリ表示件数</title>
+                <title>카테고리표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1c-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1c-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1c-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1c-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort" value="priority" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ToDoソート方法</title>
+                <title>ToDo정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p2a-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort.style.items" value="priority,end_date" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2a-sort.style.values" value="優先度,締切日" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-sort.style.values" value="우선도,마감일" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3b-sort" value="priority" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>進捗状況ソート方法</title>
+                <title>진척현황정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p3b-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3b-sort.style.items" value="user_name,priority,end_date" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p3b-sort.style.values" value="ユーザー名,優先度,締切日" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3b-sort.style.values" value="사용자명,우선도,마감일" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p4a-strlen" value="15" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>タイトル表示文字数</title>
+                <title>타이틀표시문자수</title>
             </meta-info>
         </parameter>
         <parameter name="p4a-strlen.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p4a-strlen.style.items" value="10,15,30,0" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p4a-strlen.style.values" value="10文字,15文字,30文字,制限なし" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p4a-strlen.style.values" value="10문자,15문자,30문자,무제한" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="todo.CellToDoAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="docomo_foma"/>
         <media-type ref="docomo_imode"/>

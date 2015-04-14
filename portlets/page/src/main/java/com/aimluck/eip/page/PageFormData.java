@@ -142,8 +142,8 @@ public class PageFormData extends ALAbstractFormData {
       msgList.add("これ以上ページを追加できません。");
     }
 
-    if (page_title.getValue().equals("マイページ")) {
-      msgList.add("ページ名「マイページ」はすでに追加されています。");
+    if (page_title.getValue().equals("마이 페이지")) {
+      msgList.add("ページ名「마이 페이지」はすでに追加されています。");
       return false;
     }
 
@@ -218,7 +218,7 @@ public class PageFormData extends ALAbstractFormData {
 
       String title = page_title.getValue();
       if (title == null || title.equals("")) {
-        title = "マイページ";
+        title = "마이 페이지";
       }
 
       if (portlets != null) {

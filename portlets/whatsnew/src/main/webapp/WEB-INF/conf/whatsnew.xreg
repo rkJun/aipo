@@ -23,28 +23,28 @@
     <portlet-entry name="WhatsNew" hidden="true" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>新着情報</title>
-            <description>新着情報を管理します。</description>
+            <title>새 도착 정보</title>
+            <description>새 도착 정보를 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="whatsnew" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-span" value="3" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>新着情報保持期間</title>
+                <title>새 도착 정보저장기간</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-span.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-span.style.items" value="1,3,7,31" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-span.style.values" value="１日,３日間,１週間,１ヶ月" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-span.style.values" value="１일,３일간,１주일,１개월" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <parameter name="p2a-rows" value="5" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>新着情報 保持件数</title>
+                <title>새 도착 정보 저장건수</title>
             </meta-info>
         </parameter>
         <parameter name="p2a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-rows.style.items" value="5,10,20,50,100" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2a-rows.style.values" value="５件,１０件,２０件,５０件,１００件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-rows.style.values" value="５건,１０건,２０건,５０건,１００건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <parameter name="action" value="whatsnew.WhatsNewAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>

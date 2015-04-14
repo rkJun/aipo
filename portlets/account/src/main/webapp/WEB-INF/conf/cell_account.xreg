@@ -23,8 +23,8 @@
     <portlet-entry name="Cell_AccountLogin" hidden="true" type="ref" parent="Velocity" application="false">
 
         <meta-info>
-            <title>ログイン</title>
-            <description>ログインします。</description>
+            <title>로그인</title>
+            <description>로그인합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="accountlogin-form" hidden="true" cachedOnName="true" cachedOnValue="true"/>
@@ -40,8 +40,8 @@
     </portlet-entry>
     <portlet-entry name="Cell_AccountEdit" hidden="true" type="ref" parent="Velocity" application="false">
         <meta-info>
-            <title>簡易ﾛｸﾞｲﾝ設定</title>
-            <description>ユーザー情報を管理します。</description>
+            <title>간편 로그인설정</title>
+            <description>사용자정보를 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="accountlogin-form" hidden="true" cachedOnName="true" cachedOnValue="true"/>
@@ -55,8 +55,8 @@
     </portlet-entry>
     <portlet-entry name="Cell_AccountPerson" hidden = "true" type="ref" parent="Velocity" application="false">
         <meta-info>
-            <title>個人設定</title>
-            <description>ユーザー情報を管理します。</description>
+            <title>개인설정</title>
+            <description>사용자정보를 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="account" hidden="true" cachedOnName="true" cachedOnValue="true"/>

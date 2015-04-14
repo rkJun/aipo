@@ -23,8 +23,8 @@
     <portlet-entry name="FileIO" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>インポート</title>
-            <description>インポート</description>
+            <title>가져오기</title>
+            <description>가져오기</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="fileio" hidden="true" cachedOnName="true" cachedOnValue="true"/>

@@ -23,19 +23,19 @@
     <portlet-entry name="Account" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>ユーザー管理</title>
-            <description>ユーザー情報を管理します。</description>
+            <title>사용자 관리</title>
+            <description>사용자 정보를 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="account-user" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="10" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ユーザー表示件数</title>
+                <title>사용자 표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="account.AccountAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="_showtitlebar" value="false" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>
@@ -44,8 +44,8 @@
     <portlet-entry name="Post" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>部署管理</title>
-            <description>会社情報を管理します。</description>
+            <title>부서관리</title>
+            <description>회사정보를 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="account-post-list" hidden="true" cachedOnName="true" cachedOnValue="true"/>
@@ -53,44 +53,44 @@
         <parameter name="_showtitlebar" value="false" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="10" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>部署表示件数</title>
+                <title>부서표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-sort" value="post_name" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>部署ソート方法</title>
+                <title>부서정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-sort.style.items" value="post_name" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-sort.style.values" value="部署名" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-sort.style.values" value="부서명" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="10" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>役職表示件数</title>
+                <title>직급표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-sort" value="position_name" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>役職ソート方法</title>
+                <title>직급정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-sort.style.items" value="position_name" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-sort.style.values" value="役職名" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-sort.style.values" value="직급명" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>
         <url cachedOnURL="true"/>
     </portlet-entry>
     <portlet-entry name="AccountPerson" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="owner-view"/>
         <meta-info>
-            <title>ユーザー情報</title>
-            <description>ユーザー情報を表示・編集します。</description>
+            <title>사용자 정보</title>
+            <description>사용자 정보를 표시・편집합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="accountperson-detail" hidden="true" cachedOnName="true" cachedOnValue="true"/>
@@ -101,8 +101,8 @@
     </portlet-entry>
     <portlet-entry name="AccountLogin" hidden="true" type="ref" parent="Velocity" application="false">
         <meta-info>
-            <title>ログイン</title>
-            <description>ログインします。</description>
+            <title>로그인</title>
+            <description>로그인합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="accountlogin-form" hidden="true" cachedOnName="true" cachedOnValue="true"/>
@@ -115,8 +115,8 @@
     <portlet-entry name="Position" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>役職管理</title>
-            <description>役職を管理します。</description>
+            <title>직급관리</title>
+            <description>직급을 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="account-position-list" hidden="true" cachedOnName="true" cachedOnValue="true"/>
@@ -124,44 +124,44 @@
         <parameter name="_showtitlebar" value="false" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="10" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>部署表示件数</title>
+                <title>부서표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-sort" value="post_name" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>部署ソート方法</title>
+                <title>부서정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-sort.style.items" value="post_name" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-sort.style.values" value="部署名" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-sort.style.values" value="부서명" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="10" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>役職表示件数</title>
+                <title>직급표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-sort" value="position_name" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>役職ソート方法</title>
+                <title>직급정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-sort.style.items" value="position_name" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-sort.style.values" value="役職名" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-sort.style.values" value="직급명" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>
         <url cachedOnURL="true"/>
     </portlet-entry>
     <portlet-entry name="AccountPerson" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="owner-view"/>
         <meta-info>
-            <title>ユーザー情報</title>
-            <description>ユーザー情報を表示・編集します。</description>
+            <title>사용자 정보</title>
+            <description>사용자 정보를 표시・편집합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="accountperson-detail" hidden="true" cachedOnName="true" cachedOnValue="true"/>
@@ -172,8 +172,8 @@
     </portlet-entry>
     <portlet-entry name="AccountLogin" hidden="true" type="ref" parent="Velocity" application="false">
         <meta-info>
-            <title>ログイン</title>
-            <description>ログインします。</description>
+            <title>로그인</title>
+            <description>로그인합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="accountlogin-form" hidden="true" cachedOnName="true" cachedOnValue="true"/>

@@ -23,8 +23,8 @@
     <portlet-entry name="WebPage" hidden="true" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>Webページ</title>
-            <description>Webページを表示します。</description>
+            <title>Web페이지</title>
+            <description>Web페이지를 표시합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="webpage" hidden="true" cachedOnName="true" cachedOnValue="true"/>
@@ -36,12 +36,12 @@
         </parameter>
         <parameter name="p1b-normalheight" value="300" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ページの高さ（通常表示時）</title>
+                <title>페이지의 높이（보통표시시）</title>
             </meta-info>
         </parameter>
         <parameter name="p1c-maximizedheight" value="800" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ページの高さ（最大化表示時）</title>
+                <title>페이지의 높이（최대화표시시）</title>
             </meta-info>
         </parameter>
         <media-type ref="html"/>

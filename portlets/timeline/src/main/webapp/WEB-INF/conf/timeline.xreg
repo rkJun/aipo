@@ -23,8 +23,8 @@
     <portlet-entry name="Timeline" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>タイムライン</title>
-            <description>チャット感覚で情報共有ができ、予定やToDoの追加・編集などが時系列に表示されることで社内の動きを把握してコミュニケーションできます。</description>
+            <title>타임라인</title>
+            <description>채팅 느낌으로 정보공유를 할 수 있고, 예정이나 ToDo추가・편집등을 시간순으로 표시하고, 사내 동향을 파악하며 커뮤니케이션할 수 있습니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="timeline" hidden="true" cachedOnName="true" cachedOnValue="true"/>
@@ -32,21 +32,21 @@
         <parameter name="p1a-rows" value="0" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
 
             <meta-info>
-                <title>コンテンツの高さ（トップページ）</title>
+                <title>컨텐츠의 높이（첫페이지）</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="0,250,500,750" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="コンテンツの高さに合わせる,250px,500px,750px" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="컨텐츠의 높이에 맞춤,250px,500px,750px" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-rows" value="0" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
 
             <meta-info>
-                <title>コンテンツの高さ</title>
+                <title>컨텐츠의 높이</title>
             </meta-info>
         </parameter>
         <parameter name="p2a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-rows.style.items" value="0,250,500,750" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2a-rows.style.values" value="コンテンツの高さに合わせる,250px,500px,750px" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-rows.style.values" value="컨텐츠의 높이에 맞춤,250px,500px,750px" hidden="true" cachedOnName="true" cachedOnValue="true"/>
 
         <media-type ref="html"/>
         <url cachedOnUrl="true"/>

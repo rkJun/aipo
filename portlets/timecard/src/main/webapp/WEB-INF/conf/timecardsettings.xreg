@@ -23,8 +23,8 @@
     <portlet-entry name="TimecardSettings" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>タイムカード管理(簡易版)</title>
-            <description>タイムカード(簡易版)の勤怠時間を管理します。</description>
+            <title>타임카드관리(미니버전)</title>
+            <description>타임카드(미니버전)의 근태시간을 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="timecardsettings-detail" hidden="true" cachedOnName="true" cachedOnValue="true"/>

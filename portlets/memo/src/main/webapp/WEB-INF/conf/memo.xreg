@@ -23,39 +23,39 @@
     <portlet-entry name="Memo" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>メモ帳</title>
-            <description>個人用の簡易的なメモ帳です。</description>
+            <title>메모장</title>
+            <description>개인용 간편 메모장입니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="memo" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-memos" value="" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>初期選択メモ</title>
+                <title>초기선택메모</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-memos.style" value="MemoIdListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-memos.style.initialvalue" value="（表示するメモの選択）" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-memos.style.initialvalue" value="（표시할 메모 선택）" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="20" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>メモ表示件数</title>
+                <title>메모표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort" value="memo_name" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>メモソート方法</title>
+                <title>메모정렬방법</title>
             </meta-info>
         </parameter>
         <parameter name="p2a-sort.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-sort.style.items" value="memo_name,update_date,create_date" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2a-sort.style.values" value="タイトル,更新日,作成日" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-sort.style.values" value="타이틀,수정일작성일" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="memo.MemoAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_mode1" value="MemoFormScreen" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_image1" value="icon/icon_add.gif" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_screen1" value="true" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="function_caption1" value="メモ追加" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="function_caption1" value="메모추가" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_after_function1" value="aipo.memo.onLoadMemoDialog" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>
         <url cachedOnURL="true"/>

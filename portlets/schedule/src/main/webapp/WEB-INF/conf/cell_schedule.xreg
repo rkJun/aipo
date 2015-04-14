@@ -23,58 +23,58 @@
     <portlet-entry name="Cell_Schedule" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>ｽｹｼﾞｭｰﾙ</title>
-            <description>個人の 1 日のスケジュールを時間割で管理します。カスタマイズ画面で表示時間の幅を自由に設定できます。</description>
+            <title>스케쥴</title>
+            <description>개인의 1일 스케쥴을 시간별로 나눠 관리합니다.커스터마이즈화면에서 표시시간의 폭을 자유롭게 설정할 수 있습니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="schedule-oneday" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="schedule.CellScheduleAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="0" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>表示開始時間（1日表示）</title>
+                <title>표시시작시간（1일표시）</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="0,1,2,3,4,5,6,7,8,9,10,11,12" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="0時,1時,2時,3時,4時,5時,6時,7時,8時,9時,10時,11時,12時" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="0시,1시,2시,3시,4시,5시,6시,7시,8시,9시,10시,11시,12시" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="24" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>表示終了時間（1日表示）</title>
+                <title>표시종료시간（1일표시）</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows.style.items" value="13,14,15,16,17,18,19,20,21,22,23,24" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1b-rows.style.values" value="13時,14時,15時,16時,17時,18時,19時,20時,21時,22時,23時,24時" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1b-rows.style.values" value="13시,14시,15시,16시,17시,18시,19시,20시,21시,22시,23시,24시" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3a-user" value="" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>初期選択ユーザー／設備</title>
+                <title>초기선택사용자／설비</title>
             </meta-info>
         </parameter>
         <parameter name="p3a-user.style" value="UserFacilityListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p3a-user.style.initialvalue" value="（ユーザー／設備の選択）" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3a-user.style.initialvalue" value="（사용자／설비의 선택）" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3a-group" value="" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>初期選択グループ</title>
+                <title>초기선택그룹</title>
             </meta-info>
         </parameter>
         <parameter name="p3a-group.style" value="GroupFacilityListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p3a-group.style.initialvalue" value="（選択してください）" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3a-group.style.initialvalue" value="（선택してください）" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3b-group" value="0" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>グループ表示時に、自分を上に表示</title>
+                <title>그룹표시시に、自분を上に표시</title>
             </meta-info>
         </parameter>
         <parameter name="p3b-group.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3b-group.style.items" value="0,1" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p3b-group.style.values" value="有効,無効" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3b-group.style.values" value="유효,무효" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p5a-view" value="1" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>ToDoの表示</title>
+                <title>ToDo의 표시</title>
             </meta-info>
         </parameter>
         <parameter name="p5a-view.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p5a-view.style.items" value="1,0" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p5a-view.style.values" value="有効,無効" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p5a-view.style.values" value="유효,무효" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="docomo_foma"/>
         <media-type ref="docomo_imode"/>
         <media-type ref="iphone"/>

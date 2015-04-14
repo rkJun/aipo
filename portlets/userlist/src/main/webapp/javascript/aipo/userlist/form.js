@@ -70,10 +70,10 @@ dojo.provide("aipo.userlist");
 //
 //aipo.addressbook.formSwitchCompanyInput = function(button) {
 //    if(button.form.is_new_company.value == 'TRUE' || button.form.is_new_company.value == 'true') {
-//        button.value = '新しく入力する';
+//        button.value = '새로 입력하기';
 //        aipo.addressbook.formCompanyInputOff(button.form);
 //    } else {
-//        button.value = '一覧から選択する';
+//        button.value = '목록에서 선택하기';
 //        aipo.addressbook.formCompanyInputOn(button.form);
 //    }
 //}

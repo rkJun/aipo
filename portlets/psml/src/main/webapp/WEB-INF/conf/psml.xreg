@@ -23,8 +23,8 @@
     <portlet-entry name="Psml" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="admin-view"/>
         <meta-info>
-            <title>アプリ初期配置管理</title>
-            <description>ポートレット配置を管理します。</description>
+            <title>어플초기배치관리</title>
+            <description>포틀렛배치를 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="psml" hidden="true" cachedOnName="true" cachedOnValue="true"/>

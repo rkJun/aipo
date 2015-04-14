@@ -23,8 +23,8 @@
     <portlet-entry name="Cellular" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="owner-view"/>
         <meta-info>
-            <title>携帯電話設定</title>
-            <description>携帯電話の設定を管理します。</description>
+            <title>휴대폰 설정</title>
+            <description>휴대폰의 설정을 관리합니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="cellular" hidden="true" cachedOnName="true" cachedOnValue="true"/>

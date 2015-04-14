@@ -23,35 +23,35 @@
 <portlet-entry name="Cell_AddressBook" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>ｱﾄﾞﾚｽ帳</title>
-            <description>電話番号やメールアドレスを共有できます。</description>
+            <title>주소록</title>
+            <description>전화번호나 메일주소를 공유할 수 있습니다.</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="addressbook" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="10" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>表示件数</title>
+                <title>표시건수</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows.style.items" value="5,10,20,50" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="5건,10건,20건,50건" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-type" value="syagai" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>初期選択アドレス</title>
+                <title>초기선택주소</title>
             </meta-info>
         </parameter>
         <parameter name="p2a-type.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p2a-type.style.items" value="syagai_address,corp_address" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p2a-type.style.values" value="社外アドレス,社内アドレス" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-type.style.values" value="사외주소,사내주소" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3a-strlen" value="15" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>一覧表示文字数</title>
+                <title>목록표시문자수</title>
             </meta-info>
         </parameter>
         <parameter name="p3a-strlen.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p3a-strlen.style.items" value="10,15,30,0" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="p3a-strlen.style.values" value="10文字,15文字,30文字,制限なし" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3a-strlen.style.values" value="10문자,15문자,30문자,무제한" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="action" value="addressbook.CellAddressBookAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="docomo_foma"/>
         <media-type ref="docomo_imode"/>
